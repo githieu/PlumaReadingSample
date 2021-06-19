@@ -1,0 +1,19 @@
+body {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+h1.article_title,
+h1.article_title a {
+    color: #ffffff;
+}
+
+pre,
+blockquote,
+code {
+    background: #454545;
+}
+
+figure > figcaption {
+    color: #d1d1d1;
+}

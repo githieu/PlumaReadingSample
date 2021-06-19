@@ -10,9 +10,12 @@ h1.article_title a {
 
 pre,
 blockquote,
-code,
-.code_snippet {
+code {
     background: #f5f7f8;
-    background: #cac9c9;
 }
+
+figure > figcaption {
+    color: #5c5c5c;
+}
+
 
