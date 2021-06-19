@@ -1,122 +1,11 @@
 <head>
     <style type='text/css'>
-        @font-face {
-            font-family: fontRegular;
-            src: url(file:///android_asset/Rubik-Regular.ttf)
-        }
-
-        @font-face {
-            font-family: TitleFontBold;
-            src: url(file:///android_asset/Jost-Bold.ttf)
-        }
-
-        @font-face {
-            font-family: FontBold;
-            src: url(file:///android_asset/Rubik-Bold.ttf)
-        }
-
-        body {
-            max-width: 100%;
-            margin: 68px 18px 18px 18px;
-            font-family: fontRegular, sans-serif, sans-serif-light;
-            color: #474747;
-            background-color: #FFFFFF;
-            line-height: 150%
-        }
-
-        * {
-            max-width: 100%;
-            word-break: break-word
-        }
-
-        h1,
-        h2 {
-            font-weight: normal;
-            line-height: 130%
-        }
-
-        h1.article_title {
-            font-weight: bold;
-            color: #474747;
-        }
-
-        h1 {
-            font-size: 160%;
-            margin-bottom: 0.1em;
-            font-family: TitleFontBold
-        }
-
-        h2 {
-            font-size: 150%;
-            font-family: TitleFontBold
-        }
-
-        a {
-            color: #6002EE;
-            text-decoration: none;
-        }
-
-        h1 a {
-            color: inherit;
-            text-decoration: none
-        }
-
-        div.code_snippet {
-            background-color: #EDEDED;
-            margin: 0.6em 0 0.6em 0em;
-            padding: 1.3em;
-            border-radius: 10px;
-        }
-
-        img {
-            height: auto
-        }
-
-        pre {
-            white-space: pre-wrap;
-            direction: ltr;
-        }
-
-        blockquote {
-            border-left: thick solid #BEBEBE;
-            background-color: #EDEDED;
-            margin: 0.6em 0 0.6em 0em;
-            padding: 0.6em
-        }
-
-        p {
-            margin: 0.8em 0 0.8em 0;
-            font-size: 100%
-        }
-
-        p.subtitle {
-            color: #A6A6A6;
-            border-bottom: 1px solid #E9E9E9;
-            padding-top: 2px;
-            padding-bottom: 8px;
-            font-weight: 400
-        }
-
-        p.timestamp {
-            color: #A6A6A6;
-            padding-top: 0px;
-            padding-bottom: 2px;
-            font-size: 80%;
-            font-weight: bold
-        }
-
-        ul,
-        ol {
-            margin: 0 0 0.8em 0.6em;
-            padding: 0 0 0 1em
-        }
-
-        ul li,
-        ol li {
-            margin: 0 0 0.8em 0;
-            padding: 0
-        }
+        
     </style>
+    
+    <link href="./fonts.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+    <link href="./darktheme.css" rel="stylesheet">
     <meta name='viewport' content='width=device-width' />
 </head>
 
@@ -124,8 +13,8 @@
     <h1 class='article_title'><a
             href='https://code.tutsplus.com/tutorials/how-to-code-a-navigation-drawer-in-an-android-app--cms-30263'>How
             to Code a Navigation Drawer for an Android App 11</a></h1>
-    <p class='subtitle'>Esther Vaati - Envato Tuts+ Code</p>
-    <p class='timestamp'>(2/12) - Published: Yesterday, 8:32 AM</p><img
+    <p class='author' title="Author">by Esther Vaati &bull; <span class="accent-color" title="Feed">Envato Tuts+ Code</span></p>
+    <p class='infos'>Published: Yesterday, 8:32 AM &bull; Read time: 16min</p><img
         src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1499/posts/30263/final_image/we.png"
         alt="Final product image">
     <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/1499/posts/30263/final_image/we.png"
@@ -142,8 +31,12 @@
             Google, which uses a navigation drawer to navigate different application sections. You can check it yourself
             by downloading the Inbox app from the Google Play store if you don't already have it on your device. The
             screenshot below shows Inbox with the navigation drawer pulled open.</p>
-        <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1885/posts/37001/image-upload/drawer%20app.webp"
+        <figure>
+            <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1885/posts/37001/image-upload/drawer%20app.webp"
             alt="navigation drawer android">
+            <figcaption>This is an image caption.</figcaption>
+        </figure>
+            
         <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/1885/posts/37001/image-upload/drawer%20app.webp"
             alt="navigation drawer android">
         <img src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=360/uploads/users/1885/posts/37001/image-upload/drawer%20app.webp"
@@ -192,9 +85,9 @@
 }
 </pre>
                 <p>Sync the project files for the changes to take effect.</p>
-                <h2>Create the&nbsp;<div class='code_snippet'><code>DrawerLayout</div></code>&nbsp;</h2>
+                <h2>Create the&nbsp;<code>DrawerLayout</code>&nbsp;</h2>
                 <p>To display the drawer icon on all destinations in our app, we will use the&nbsp;
-                <div class='code_snippet'><code>DrawerLayout</div></code>&nbsp;component.
+                <code>DrawerLayout</code>&nbsp;component.
                     Open&nbsp;<strong>main_acivity.xm</strong>l and add&nbsp;<div class='code_snippet'>
                         <code>DrawerLayout</div></code>&nbsp;as the root view. The drawer layout will host two child
                         views,&nbsp;<div class='code_snippet'><code>NavHostFragment</div></code>&nbsp;and&nbsp;<div
@@ -1886,7 +1779,7 @@ class MainActivity : AppCompatActivity() {
                                                                                                                                                         </div>
                                                                                                                                                         <div>
                                                                                                                                                             <img
-                                                                                                                                                                src="http://audio.tutsplus.com.feedsportal.com/c/35227/f/668806/s/30263/sc/4/mf.gif">
+                                                                                                                                                                src="http://audio.tutsplus.com.feedsportal.com/c/35227/f/668806/s/30263/sc/4/mf.gif" onerror="this.style.display='none'">
 
                                                                                                                                                         </div>
 </body>
