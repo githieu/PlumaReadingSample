@@ -133,8 +133,7 @@ h1.article_title {
     margin-bottom: 1.5em;
 }
 
-code,
-.code_snippet {
+code {
     font-family: 'Source Code Pro';
     border: 1px solid #e4e4e4;
     padding: 4px 4px 1px;

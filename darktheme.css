@@ -10,8 +10,7 @@ h1.article_title a {
 
 pre,
 blockquote,
-code,
-.code_snippet {
+code {
     background: #454545;
 }
 
